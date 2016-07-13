@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  tensorflow-tutorial:
+    image: gcr.io/tensorflow/tensorflow
+    container_name: tensorflow-tutorial
+    ports:
+     - 8888:8888
+    volumes:
+     - /vagrant:/notebooks/tutorial
